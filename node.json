@@ -1,0 +1,15 @@
+{
+  "extends": "./defaults.json",
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "callback-return": 2,
+    "global-require": 2,
+    "handle-callback-err": 2,
+    "no-new-require": 2,
+    "no-path-concat": 2,
+    "strict": [2, "global"]
+  }
+}

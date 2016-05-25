@@ -1,0 +1,11 @@
+{
+  "extends": "./defaults.json",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "no-implicit-globals": 2,
+    "no-script-url": 2,
+    "strict": [2, "safe"]
+  }
+}
