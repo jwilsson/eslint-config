@@ -104,9 +104,12 @@
     "no-warning-comments": 2,
     "no-whitespace-before-property": 2,
     "no-with": 2,
+    "object-curly-newline": [2, {
+      "minProperties": 1
+    }],
+    "object-property-newline": 2,
     "one-var": [2, "never"],
     "operator-linebreak": 2,
-    "object-property-newline": 2,
     "padded-blocks": [2, "never"],
     "prefer-arrow-callback": [2, {
       "allowNamedFunctions": true
