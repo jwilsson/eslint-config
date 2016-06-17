@@ -40,7 +40,9 @@
         "before": true
     }],
     "max-depth": 2,
-    "max-nested-callbacks": [2, {"max": 3}],
+    "max-nested-callbacks": [2, {
+        "max": 4
+    }],
     "max-params": 2,
     "max-statements-per-line": 2,
     "new-cap": 2,
