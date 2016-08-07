@@ -137,7 +137,13 @@
         "nonwords": false,
         "words": true
     }],
-    "spaced-comment": 2,
+    "spaced-comment": [2, "always", {
+        "block": {
+            "balanced": true,
+            "exceptions": ["*"],
+            "markers": ["!"]
+        }
+    }],
     "template-curly-spacing": [2, "always"],
     "unicode-bom": 2,
     "wrap-iife": 2,
