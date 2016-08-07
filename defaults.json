@@ -2,7 +2,8 @@
   "extends": "eslint:recommended",
   "parser": "babel-eslint",
   "plugins": [
-    "babel"
+    "babel",
+    "strict-newline"
   ],
   "parserOptions": {
     "ecmaVersion": 7,
@@ -152,6 +153,8 @@
 
     "babel/arrow-parens": 2,
     "babel/func-params-comma-dangle": [2, "always-multiline"],
-    "babel/generator-star-spacing": 2
+    "babel/generator-star-spacing": 2,
+
+    "strict-newline/strict-newline": 2
   }
 }
