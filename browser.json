@@ -5,6 +5,7 @@
     "jquery": true
   },
   "rules": {
+    "no-alert": 2,
     "no-implicit-globals": 2,
     "no-script-url": 2,
     "strict": [2, "safe"]
