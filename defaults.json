@@ -2,8 +2,7 @@
   "extends": "eslint:recommended",
   "parser": "babel-eslint",
   "plugins": [
-    "babel",
-    "strict-newline"
+    "babel"
   ],
   "parserOptions": {
     "ecmaVersion": 7,
@@ -43,6 +42,8 @@
         "after": true,
         "before": true
     }],
+    "line-comment-position": 2,
+    "lines-around-directive": 2,
     "max-depth": 2,
     "max-nested-callbacks": [2, {
         "max": 4
@@ -170,8 +171,6 @@
 
     "babel/arrow-parens": 2,
     "babel/func-params-comma-dangle": [2, "always-multiline"],
-    "babel/generator-star-spacing": 2,
-
-    "strict-newline/strict-newline": 2
+    "babel/generator-star-spacing": 2
   }
 }
