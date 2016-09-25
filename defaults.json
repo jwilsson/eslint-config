@@ -1,12 +1,10 @@
 {
   "extends": "eslint:recommended",
-  "parser": "babel-eslint",
   "plugins": [
     "babel"
   ],
   "parserOptions": {
-    "ecmaVersion": 7,
-    "sourceType": "script"
+    "ecmaVersion": 2017
   },
   "env": {
     "es6": true
@@ -14,6 +12,7 @@
   "rules": {
     "array-bracket-spacing": 2,
     "arrow-body-style": [2, "always"],
+    "arrow-parens": 2,
     "arrow-spacing": 2,
     "brace-style": 2,
     "camelcase": 2,
@@ -32,6 +31,7 @@
     "func-call-spacing": 2,
     "func-names": 2,
     "func-style": 2,
+    "generator-star-spacing": 2,
     "guard-for-in": 2,
     "indent": [2, 4, {
         "SwitchCase": 1,
@@ -169,8 +169,6 @@
     "yield-star-spacing": 2,
     "yoda": 2,
 
-    "babel/arrow-parens": 2,
-    "babel/func-params-comma-dangle": [2, "always-multiline"],
-    "babel/generator-star-spacing": 2
+    "babel/func-params-comma-dangle": [2, "always-multiline"]
   }
 }
