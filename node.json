@@ -14,6 +14,9 @@
     "no-new-require": 2,
     "no-path-concat": 2,
     "no-process-exit": 2,
+    "no-underscore-dangle": [2, {
+        "allow": ["__dirname", "__filename"]
+    }],
     "strict": [2, "global"],
 
     "node/no-deprecated-api": 2,
