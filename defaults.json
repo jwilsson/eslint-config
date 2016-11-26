@@ -13,6 +13,7 @@
     "arrow-spacing": 2,
     "brace-style": 2,
     "camelcase": 2,
+    "capitalized-comments": 2,
     "comma-dangle": [2, {
         "arrays": "always-multiline",
         "objects": "always-multiline",
@@ -148,6 +149,7 @@
     "prefer-template": 2,
     "quotes": [2, "single", "avoid-escape"],
     "radix": [2, "as-needed"],
+    "require-await": 2,
     "semi": 2,
     "semi-spacing": 2,
     "sort-keys": [2, "asc", {
