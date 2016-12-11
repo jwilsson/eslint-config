@@ -64,6 +64,7 @@
         "ignoreChainWithDepth": 3
     }],
     "no-array-constructor": 2,
+    "no-await-in-loop": 2,
     "no-caller": 2,
     "no-confusing-arrow": 2,
     "no-console": 0,
