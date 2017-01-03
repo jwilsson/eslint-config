@@ -5,9 +5,9 @@
     "jquery": true
   },
   "rules": {
-    "no-alert": 2,
-    "no-implicit-globals": 2,
-    "no-script-url": 2,
-    "strict": [2, "safe"]
+    "no-alert": "error",
+    "no-implicit-globals": "error",
+    "no-script-url": "error",
+    "strict": ["error", "safe"]
   }
 }
