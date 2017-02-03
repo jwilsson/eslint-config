@@ -181,6 +181,7 @@
         }
     }],
     "template-curly-spacing": ["error", "always"],
+    "template-tag-spacing": ["error", "always"],
     "unicode-bom": "error",
     "wrap-iife": "error",
     "yield-star-spacing": "error",
