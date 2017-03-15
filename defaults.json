@@ -66,6 +66,7 @@
     "no-array-constructor": "error",
     "no-await-in-loop": "error",
     "no-caller": "error",
+    "no-compare-neg-zero": "error",
     "no-confusing-arrow": "error",
     "no-console": "off",
     "no-div-regex": "error",
