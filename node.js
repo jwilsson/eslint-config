@@ -1,11 +1,11 @@
-{
+module.exports = {
   "extends": "./defaults.json",
   "plugins": [
-    "node"
+    "node",
   ],
   "env": {
     "mocha": true,
-    "node": true
+    "node": true,
   },
   "rules": {
     "callback-return": "error",
@@ -15,10 +15,10 @@
     "no-path-concat": "error",
     "no-process-exit": "error",
     "no-underscore-dangle": ["error", {
-        "allow": ["__dirname", "__filename"]
+        "allow": ["__dirname", "__filename"],
     }],
     "strict": ["error", "global"],
 
-    "node/no-deprecated-api": "error"
-  }
-}
+    "node/no-deprecated-api": "error",
+  },
+};

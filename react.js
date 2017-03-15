@@ -1,14 +1,14 @@
-{
+module.exports = {
   "extends": ["./browser.json", "plugin:react/recommended"],
   "plugins": [
-    "react"
+    "react",
   ],
   "parserOptions": {
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
-      "jsx": true
+      "jsx": true,
     },
-    "sourceType": "module"
+    "sourceType": "module",
   },
   "rules": {
     "react/forbid-component-props": "error",
@@ -43,6 +43,6 @@
     "react/self-closing-comp": "error",
     "react/sort-comp": "error",
     "react/sort-prop-types": "error",
-    "react/style-prop-object": "error"
-  }
-}
+    "react/style-prop-object": "error",
+  },
+};
