@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": "./defaults.json",
+  "extends": "./defaults",
   "plugins": [
     "node",
   ],

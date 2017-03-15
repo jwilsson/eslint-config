@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": ["./browser.json", "plugin:react/recommended"],
+  "extends": ["./browser", "plugin:react/recommended"],
   "plugins": [
     "react",
   ],

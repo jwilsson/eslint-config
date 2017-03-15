@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": "./defaults.json",
+  "extends": "./defaults",
   "env": {
     "browser": true,
     "jquery": true,
