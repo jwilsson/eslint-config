@@ -1,5 +1,6 @@
 module.exports = {
   "extends": "./defaults.js",
+  "parser": "babel-eslint",
   "env": {
     "browser": true,
     "jquery": true,
