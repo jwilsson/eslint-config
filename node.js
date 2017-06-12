@@ -1,5 +1,9 @@
 module.exports = {
-  "extends": "./defaults.js",
+  "plugins": ["node"],
+  "extends": [
+      "./defaults.js",
+      "plugin:node/recommended",
+  ],
   "env": {
     "mocha": true,
     "node": true,
@@ -16,5 +20,7 @@ module.exports = {
         "allow": ["__dirname", "__filename"],
     }],
     "strict": ["error", "global"],
+
+    "node/exports-style": ["error", "module.exports"],
   },
 };
