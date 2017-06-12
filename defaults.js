@@ -7,7 +7,11 @@ module.exports = {
     "es6": true,
   },
   "rules": {
+    "array-bracket-newline": "error",
     "array-bracket-spacing": "error",
+    "array-element-newline": ["error", {
+        "multiline": true,
+    }],
     "arrow-body-style": ["error", "always"],
     "arrow-parens": "error",
     "arrow-spacing": "error",
@@ -32,6 +36,7 @@ module.exports = {
     "dot-notation": "error",
     "eol-last": "error",
     "eqeqeq": "error",
+    "for-direction": "error",
     "func-call-spacing": "error",
     "func-name-matching": "error",
     "func-names": "error",
@@ -48,7 +53,6 @@ module.exports = {
         "before": true,
     }],
     "line-comment-position": "error",
-    "lines-around-directive": "error",
     "max-depth": "error",
     "max-nested-callbacks": ["error", {
         "max": 4,
@@ -58,15 +62,12 @@ module.exports = {
     "multiline-ternary": ["error", "never"],
     "new-cap": "error",
     "new-parens": "error",
-    "newline-after-var": "error",
-    "newline-before-return": "error",
     "newline-per-chained-call": ["error", {
         "ignoreChainWithDepth": 3,
     }],
     "no-array-constructor": "error",
     "no-await-in-loop": "error",
     "no-caller": "error",
-    "no-compare-neg-zero": "error",
     "no-confusing-arrow": "error",
     "no-console": "off",
     "no-div-regex": "error",
@@ -79,7 +80,6 @@ module.exports = {
     "no-extra-bind": "error",
     "no-extra-label": "error",
     "no-floating-decimal": "error",
-    "no-global-assign": "error",
     "no-implicit-coercion": "error",
     "no-implied-eval": "error",
     "no-inline-comments": "error",
@@ -129,7 +129,6 @@ module.exports = {
     "no-useless-computed-key": "error",
     "no-useless-concat": "error",
     "no-useless-constructor": "error",
-    "no-useless-escape": "error",
     "no-useless-rename": "error",
     "no-useless-return": "error",
     "no-var": "error",
@@ -144,6 +143,28 @@ module.exports = {
     "one-var": ["error", "never"],
     "operator-linebreak": "error",
     "padded-blocks": ["error", "never"],
+    "padding-line-between-statements": ["error",
+        // Require a blank line before returns
+        { blankLine: "always", prev: "*", next: "return" },
+
+        // Require a blank line after a sequence of variable declarations
+        { blankLine: "always", prev: ["const", "let", "var"], next: "*"},
+        { blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"]},
+
+        // Require a blank line after directives, e.g. "use strict"
+        { blankLine: "always", prev: "directive", next: "*" },
+        { blankLine: "any", prev: "directive", next: "directive" },
+
+        // Require a blank line after blocks
+        { blankLine: "always", prev: "block", next: "*" },
+
+        // Require a blank line before exports
+        { blankLine: "always", prev: "*", next: ["cjs-export", "export"] },
+
+        // Require a blank line after a sequence of imports/requires
+        { blankLine: "always", prev: ["cjs-import", "import"], next: "*"},
+        { blankLine: "any", prev: ["cjs-import", "import"], next: ["cjs-import", "import"]},
+    ],
     "prefer-arrow-callback": ["error", {
       "allowNamedFunctions": true,
     }],
@@ -158,16 +179,13 @@ module.exports = {
     "require-await": "error",
     "semi": "error",
     "semi-spacing": "error",
+    "semi-style": "error",
     "sort-keys": ["error", "asc", {
         "caseSensitive": false,
         "natural": true,
     }],
     "space-before-blocks": "error",
-    "space-before-function-paren": ["error", {
-        "anonymous": "always",
-        "asyncArrow": "always",
-        "named": "always",
-    }],
+    "space-before-function-paren": "error",
     "space-in-parens": "error",
     "space-infix-ops": "error",
     "space-unary-ops": ["error", {
@@ -181,6 +199,7 @@ module.exports = {
             "markers": ["!"],
         },
     }],
+    "switch-colon-spacing": "error",
     "template-curly-spacing": ["error", "always"],
     "template-tag-spacing": ["error", "always"],
     "unicode-bom": "error",
