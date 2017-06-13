@@ -28,7 +28,7 @@ module.exports = {
     "react/jsx-no-literals": "error",
     "react/jsx-no-target-blank": "error",
     "react/jsx-pascal-case": "error",
-    "react/jsx-space-before-closing": "error",
+    "react/jsx-tag-spacing": "error",
     "react/jsx-wrap-multilines": "error",
     "react/no-danger-with-children": "error",
     "react/no-danger": "error",
@@ -38,6 +38,9 @@ module.exports = {
     "react/no-render-return-value": "error",
     "react/no-string-refs": "error",
     "react/no-unused-prop-types": "error",
+    "react/no-will-update-set-state": ["error", {
+        "disallow-in-func": true,
+    }],
     "react/prefer-es6-class": "error",
     "react/require-optimization": "error",
     "react/self-closing-comp": "error",
