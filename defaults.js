@@ -42,6 +42,7 @@ module.exports = {
     "func-names": "error",
     "func-style": "error",
     "generator-star-spacing": "error",
+    "getter-return": "error",
     "guard-for-in": "error",
     "indent": ["error", 4, {
         "SwitchCase": 1,
