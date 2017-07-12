@@ -170,9 +170,6 @@ module.exports = {
       "allowNamedFunctions": true,
     }],
     "prefer-const": "error",
-    "prefer-destructuring": ["error", {
-        "array": false,
-    }],
     "prefer-promise-reject-errors": "error",
     "prefer-reflect": "error",
     "prefer-rest-params": "error",
