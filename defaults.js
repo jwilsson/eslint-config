@@ -120,7 +120,9 @@ module.exports = {
     "no-undef-init": "error",
     "no-undef": "error",
     "no-undefined": "error",
-    "no-underscore-dangle": "error",
+    "no-underscore-dangle": ["error", {
+        "enforceInMethodNames": true,
+    }],
     "no-unmodified-loop-condition": "error",
     "no-unneeded-ternary": "error",
     "no-unsafe-negation": "error",
