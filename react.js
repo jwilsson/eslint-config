@@ -12,7 +12,9 @@ module.exports = {
     "react/jsx-indent-props": "error",
     "react/jsx-indent": "error",
     "react/jsx-max-props-per-line": "error",
-    "react/jsx-no-bind": "error",
+    "react/jsx-no-bind": ["error", {
+        "ignoreRefs": true,
+    }],
     "react/jsx-no-literals": "error",
     "react/jsx-pascal-case": "error",
     "react/jsx-tag-spacing": "error",
