@@ -1,15 +1,5 @@
 module.exports = {
   "extends": ["./browser.js", "plugin:react/recommended"],
-  "plugins": [
-    "react",
-  ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-      "jsx": true,
-    },
-    "sourceType": "module",
-  },
   "rules": {
     "react/forbid-component-props": "error",
     "react/jsx-boolean-value": "error",
@@ -21,26 +11,18 @@ module.exports = {
     "react/jsx-handler-names": "error",
     "react/jsx-indent-props": "error",
     "react/jsx-indent": "error",
-    "react/jsx-key": "error",
     "react/jsx-max-props-per-line": "error",
     "react/jsx-no-bind": "error",
-    "react/jsx-no-comment-textnodes": "error",
     "react/jsx-no-literals": "error",
-    "react/jsx-no-target-blank": "error",
     "react/jsx-pascal-case": "error",
     "react/jsx-tag-spacing": "error",
     "react/jsx-wrap-multilines": "error",
-    "react/no-danger-with-children": "error",
     "react/no-danger": "error",
     "react/no-did-mount-set-state": "error",
     "react/no-did-update-set-state": "error",
     "react/no-multi-comp": "error",
-    "react/no-render-return-value": "error",
-    "react/no-string-refs": "error",
     "react/no-unused-prop-types": "error",
-    "react/no-will-update-set-state": ["error", {
-        "disallow-in-func": true,
-    }],
+    "react/no-will-update-set-state": ["error", "disallow-in-func"],
     "react/prefer-es6-class": "error",
     "react/require-optimization": "error",
     "react/self-closing-comp": "error",
