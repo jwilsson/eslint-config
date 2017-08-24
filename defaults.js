@@ -162,7 +162,8 @@ module.exports = {
         { blankLine: "always", prev: "block", next: "*" },
 
         // Require a blank line before exports
-        { blankLine: "always", prev: "*", next: ["cjs-export", "export"] },
+        { blankLine: "always", prev: ["cjs-export", "export"], next: "*"},
+        { blankLine: "any", prev: ["cjs-export", "export"], next: ["cjs-export", "export"]},
 
         // Require a blank line after a sequence of imports/requires
         { blankLine: "always", prev: ["cjs-import", "import"], next: "*"},
