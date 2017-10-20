@@ -41,7 +41,7 @@ module.exports = {
     "func-name-matching": "error",
     "func-names": "error",
     "func-style": "error",
-    "function-paren-newline": "error",
+    "function-paren-newline": ["error", "consistent"],
     "generator-star-spacing": "error",
     "getter-return": "error",
     "guard-for-in": "error",
