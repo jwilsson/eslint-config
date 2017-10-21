@@ -143,7 +143,12 @@ module.exports = {
     "no-whitespace-before-property": "error",
     "no-with": "error",
     "object-curly-newline": ["error", {
-      "minProperties": 1,
+        "ObjectExpression": {
+            "minProperties": 1,
+        },
+        "ObjectPattern": {
+            "consistent": true,
+        },
     }],
     "object-property-newline": "error",
     "one-var": ["error", "never"],
