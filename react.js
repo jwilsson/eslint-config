@@ -1,5 +1,9 @@
 module.exports = {
-  "extends": ["./browser.js", "plugin:react/recommended"],
+  "plugins": ["react"],
+  "extends": [
+      "./browser.js",
+      "plugin:react/recommended"
+  ],
   "rules": {
     "react/button-has-type": "error",
     "react/default-props-match-prop-types": "error",
