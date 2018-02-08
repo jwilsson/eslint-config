@@ -2,7 +2,7 @@ module.exports = {
   "extends": "eslint:recommended",
   "parserOptions": {
     "ecmaFeatures": {
-        "experimentalObjectRestSpread": true,
+      "experimentalObjectRestSpread": true,
     },
     "ecmaVersion": 2017,
   },
@@ -15,7 +15,7 @@ module.exports = {
     "array-element-newline": ["error", {
         "multiline": true,
     }],
-    "arrow-body-style": ["error", "always"],
+    "arrow-body-style": "error",
     "arrow-parens": "error",
     "arrow-spacing": "error",
     "brace-style": "error",
@@ -215,8 +215,8 @@ module.exports = {
         },
     }],
     "switch-colon-spacing": "error",
-    "template-curly-spacing": ["error", "always"],
-    "template-tag-spacing": ["error", "always"],
+    "template-curly-spacing": "error",
+    "template-tag-spacing": "error",
     "unicode-bom": "error",
     "wrap-iife": "error",
     "yield-star-spacing": "error",
