@@ -152,6 +152,12 @@ module.exports = {
         "ObjectPattern": {
             "consistent": true,
         },
+        "ImportDeclaration": {
+            "consistent": true,
+        },
+        "ExportDeclaration": {
+            "consistent": true,
+        },
     }],
     "object-property-newline": "error",
     "one-var": ["error", "never"],
