@@ -15,7 +15,6 @@ module.exports = {
     "react/jsx-closing-tag-location": "error",
     "react/jsx-curly-spacing": ["error", "always"],
     "react/jsx-equals-spacing": "error",
-    "react/jsx-filename-extension": "error",
     "react/jsx-first-prop-new-line": ["error", "multiline"],
     "react/jsx-handler-names": "error",
     "react/jsx-indent-props": "error",
