@@ -132,7 +132,10 @@ module.exports = {
     "no-unmodified-loop-condition": "error",
     "no-unneeded-ternary": "error",
     "no-unsafe-negation": "error",
-    "no-unused-expressions": "error",
+    "no-unused-expressions": ["error", {
+        "allowShortCircuit": true,
+        "allowTaggedTemplates": true,
+    }],
     "no-use-before-define": "error",
     "no-useless-call": "error",
     "no-useless-computed-key": "error",
