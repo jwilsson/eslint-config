@@ -20,7 +20,9 @@ module.exports = {
     "react/jsx-indent-props": "error",
     "react/jsx-indent": "error",
     "react/jsx-max-props-per-line": "error",
-    "react/jsx-no-bind": "error",
+    "react/jsx-no-bind": ["error", {
+      "allowArrowFunctions": true,
+    }],
     "react/jsx-pascal-case": "error",
     "react/jsx-sort-default-props": "error",
     "react/jsx-tag-spacing": "error",
