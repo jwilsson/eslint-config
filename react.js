@@ -4,6 +4,9 @@ module.exports = {
       "./browser.js",
       "plugin:react/recommended"
   ],
+  "env": {
+    "jest": true,
+  },
   "rules": {
     "react/boolean-prop-naming": "error",
     "react/button-has-type": "error",

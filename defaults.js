@@ -1,10 +1,7 @@
 module.exports = {
   "extends": "eslint:recommended",
   "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-    },
-    "ecmaVersion": 2017,
+    "ecmaVersion": 2018,
   },
   "env": {
     "es6": true,
@@ -12,14 +9,14 @@ module.exports = {
   "rules": {
     "array-bracket-newline": "error",
     "array-bracket-spacing": "error",
-    "array-element-newline": ["error", {
-        "multiline": true,
-    }],
+    "array-element-newline": ["error", "consistent"],
     "arrow-body-style": "error",
     "arrow-parens": "error",
     "arrow-spacing": "error",
     "brace-style": "error",
-    "camelcase": "error",
+    "camelcase": ["error", {
+        "ignoreDestructing": true,
+    }],
     "capitalized-comments": "error",
     "comma-dangle": ["error", {
         "arrays": "always-multiline",
@@ -39,14 +36,12 @@ module.exports = {
     "dot-notation": "error",
     "eol-last": "error",
     "eqeqeq": "error",
-    "for-direction": "error",
     "func-call-spacing": "error",
     "func-name-matching": "error",
     "func-names": "error",
     "func-style": "error",
     "function-paren-newline": ["error", "consistent"],
     "generator-star-spacing": "error",
-    "getter-return": "error",
     "guard-for-in": "error",
     "indent": ["error", 4, {
         "SwitchCase": 1,
@@ -59,6 +54,7 @@ module.exports = {
     }],
     "line-comment-position": "error",
     "lines-between-class-members": "error",
+    "max-classes-per-file": "error",
     "max-depth": "error",
     "max-nested-callbacks": ["error", {
         "max": 4,
@@ -112,9 +108,7 @@ module.exports = {
     "no-prototype-builtins": "error",
     "no-return-assign": "error",
     "no-return-await": "error",
-    "no-self-assign": ["error", {
-        "props": true,
-    }],
+    "no-self-assign": "error",
     "no-self-compare": "error",
     "no-sequences": "error",
     "no-shadow-restricted-names": "error",
@@ -148,20 +142,8 @@ module.exports = {
     "no-warning-comments": "error",
     "no-whitespace-before-property": "error",
     "no-with": "error",
-    "object-curly-newline": ["error", {
-        "ObjectExpression": {
-            "minProperties": 1,
-        },
-        "ObjectPattern": {
-            "consistent": true,
-        },
-        "ImportDeclaration": {
-            "consistent": true,
-        },
-        "ExportDeclaration": {
-            "consistent": true,
-        },
-    }],
+    "object-curly-newline": "error",
+    "object-curly-spacing": ["error", "always"],
     "object-property-newline": "error",
     "one-var": ["error", "never"],
     "operator-linebreak": "error",
@@ -193,6 +175,11 @@ module.exports = {
       "allowNamedFunctions": true,
     }],
     "prefer-const": "error",
+    "prefer-destructuring": ["error", {
+        "array": false,
+        "object": true,
+    }],
+    "prefer-object-spread": "error",
     "prefer-promise-reject-errors": "error",
     "prefer-reflect": "error",
     "prefer-rest-params": "error",

@@ -5,7 +5,6 @@ module.exports = {
       "plugin:node/recommended",
   ],
   "env": {
-    "mocha": true,
     "node": true,
   },
   "rules": {
@@ -14,7 +13,6 @@ module.exports = {
     "handle-callback-err": "error",
     "no-new-require": "error",
     "no-path-concat": "error",
-    "no-process-exit": "error",
     "no-underscore-dangle": ["error", {
         "allow": ["__dirname", "__filename"],
     }],
