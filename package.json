@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-jwilsson",
-  "version": "2.8.3",
+  "version": "3.0.0",
   "description": "jwilsson ESLint config",
   "repository": "jwilsson/eslint-config",
   "license": "MIT",
