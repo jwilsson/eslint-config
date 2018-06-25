@@ -15,7 +15,7 @@ module.exports = {
     "arrow-spacing": "error",
     "brace-style": "error",
     "camelcase": ["error", {
-        "ignoreDestructing": true,
+        "ignoreDestructuring": true,
     }],
     "capitalized-comments": "error",
     "comma-dangle": ["error", {
