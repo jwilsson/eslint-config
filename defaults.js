@@ -7,7 +7,7 @@ module.exports = {
     "es6": true,
   },
   "rules": {
-    "array-bracket-newline": "error",
+    "array-bracket-newline": ["error", "consistent"],
     "array-bracket-spacing": "error",
     "array-element-newline": ["error", "consistent"],
     "arrow-body-style": "error",
