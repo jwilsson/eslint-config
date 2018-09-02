@@ -5,7 +5,7 @@
   "repository": "jwilsson/eslint-config",
   "license": "MIT",
   "dependencies": {
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^9.0.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-react": "^7.10.0"
   },
