@@ -134,6 +134,7 @@ module.exports = {
     }],
     "no-use-before-define": "error",
     "no-useless-call": "error",
+    "no-useless-catch": true,
     "no-useless-computed-key": "error",
     "no-useless-concat": "error",
     "no-useless-constructor": "error",
