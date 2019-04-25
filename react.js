@@ -8,7 +8,6 @@ module.exports = {
     "jest": true,
   },
   "rules": {
-    "react/boolean-prop-naming": "error",
     "react/button-has-type": "error",
     "react/default-props-match-prop-types": "error",
     "react/forbid-component-props": "error",
@@ -16,7 +15,7 @@ module.exports = {
     "react/jsx-child-element-spacing": "error",
     "react/jsx-closing-bracket-location": "error",
     "react/jsx-closing-tag-location": "error",
-    "react/jsx-curly-spacing": ["error", "always"],
+    "react/jsx-curly-spacing": "error",
     "react/jsx-equals-spacing": "error",
     "react/jsx-first-prop-new-line": ["error", "multiline"],
     "react/jsx-handler-names": "error",
@@ -33,6 +32,10 @@ module.exports = {
     "react/jsx-wrap-multilines": "error",
     "react/no-access-state-in-setstate": "error",
     "react/no-danger": "error",
+    "react/no-deprecated": "error",
+    "react/destructuring-assignment": ["error", {
+      "ignoreClassFields": true
+    }],
     "react/no-did-mount-set-state": "error",
     "react/no-did-update-set-state": "error",
     "react/no-multi-comp": "error",
