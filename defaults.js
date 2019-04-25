@@ -1,8 +1,12 @@
 module.exports = {
   "extends": "eslint:recommended",
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2019,
   },
+  "plugins": [
+    "babel"
+  ],
   "env": {
     "es6": true,
   },
@@ -14,9 +18,6 @@ module.exports = {
     "arrow-parens": "error",
     "arrow-spacing": "error",
     "brace-style": "error",
-    "camelcase": ["error", {
-        "ignoreDestructuring": true,
-    }],
     "capitalized-comments": "error",
     "comma-dangle": ["error", {
         "arrays": "always-multiline",
@@ -87,7 +88,6 @@ module.exports = {
     "no-implicit-coercion": "error",
     "no-implied-eval": "error",
     "no-inline-comments": "error",
-    "no-invalid-this": "error",
     "no-iterator": "error",
     "no-label-var": "error",
     "no-labels": ["error", {
@@ -128,10 +128,6 @@ module.exports = {
     "no-unmodified-loop-condition": "error",
     "no-unneeded-ternary": "error",
     "no-unsafe-negation": "error",
-    "no-unused-expressions": ["error", {
-        "allowShortCircuit": true,
-        "allowTaggedTemplates": true,
-    }],
     "no-use-before-define": "error",
     "no-useless-call": "error",
     "no-useless-catch": true,
@@ -146,7 +142,6 @@ module.exports = {
     "no-whitespace-before-property": "error",
     "no-with": "error",
     "object-curly-newline": "error",
-    "object-curly-spacing": ["error", "always"],
     "object-property-newline": "error",
     "one-var": ["error", "never"],
     "operator-linebreak": "error",
@@ -188,12 +183,10 @@ module.exports = {
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
-    "quotes": ["error", "single", "avoid-escape"],
     "radix": ["error", "as-needed"],
     "require-atomic-updates": "error",
     "require-await": "error",
     "require-unicode-regexp": "error",
-    "semi": "error",
     "semi-spacing": "error",
     "semi-style": "error",
     "sort-keys": ["error", "asc", {
@@ -222,5 +215,17 @@ module.exports = {
     "wrap-iife": "error",
     "yield-star-spacing": "error",
     "yoda": "error",
+
+    "babel/camelcase": ["error", {
+        "ignoreDestructuring": true,
+    }],
+    "babel/no-invalid-this": "error",
+    "babel/no-unused-expressions": ["error", {
+        "allowShortCircuit": true,
+        "allowTaggedTemplates": true,
+    }],
+    "babel/object-curly-spacing": ["error", "always"],
+    "babel/quotes": ["error", "single", "avoid-escape"],
+    "babel/semi": "error",
   },
 };
