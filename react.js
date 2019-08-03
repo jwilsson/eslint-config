@@ -33,8 +33,8 @@ module.exports = {
     "react/no-access-state-in-setstate": "error",
     "react/no-danger": "error",
     "react/no-deprecated": "error",
-    "react/destructuring-assignment": ["error", {
-      "ignoreClassFields": true
+    "react/destructuring-assignment": ["error", "always", {
+      "ignoreClassFields": true,
     }],
     "react/no-did-mount-set-state": "error",
     "react/no-did-update-set-state": "error",
