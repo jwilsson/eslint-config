@@ -7,6 +7,11 @@ module.exports = {
   "env": {
     "jest": true,
   },
+  "settings": {
+      "react": {
+          "version": "detect",
+      },
+  },
   "rules": {
     "react/button-has-type": "error",
     "react/default-props-match-prop-types": "error",
@@ -46,7 +51,6 @@ module.exports = {
     "react/no-unused-prop-types": "error",
     "react/no-unused-state": "error",
     "react/no-will-update-set-state": "error",
-    "react/no-will-update-set-state": ["error", "disallow-in-func"],
     "react/prefer-es6-class": "error",
     "react/prefer-stateless-function": "error",
     "react/require-optimization": "error",
