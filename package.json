@@ -12,5 +12,14 @@
   },
   "peerDependencies": {
     "eslint": "^6.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node.js"
+    ],
+    "rules": {
+      "sort-keys": "off",
+      "strict": "off"
+    }
   }
 }
