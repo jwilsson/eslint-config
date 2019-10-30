@@ -138,47 +138,67 @@ module.exports = {
         'operator-linebreak': 'error',
         'padded-blocks': ['error', 'never'],
         'padding-line-between-statements': ['error',
-        // Require a blank line before returns
-            { blankLine: 'always',
+            // Require a blank line before returns
+            {
+                blankLine: 'always',
                 prev: '*',
-                next: 'return' },
+                next: 'return'
+            },
 
             // Require a blank line after a sequence of variable declarations
-            { blankLine: 'always',
+            {
+                blankLine: 'always',
                 prev: ['const', 'let', 'var'],
-                next: '*' },
-            { blankLine: 'any',
+                next: '*'
+            },
+            {
+                blankLine: 'any',
                 prev: ['const', 'let', 'var'],
-                next: ['const', 'let', 'var'] },
+                next: ['const', 'let', 'var']
+            },
 
             // Require a blank line after directives, e.g. "use strict"
-            { blankLine: 'always',
+            {
+                blankLine: 'always',
                 prev: 'directive',
-                next: '*' },
-            { blankLine: 'any',
+                next: '*'
+            },
+            {
+                blankLine: 'any',
                 prev: 'directive',
-                next: 'directive' },
+                next: 'directive'
+            },
 
             // Require a blank line after blocks
-            { blankLine: 'always',
+            {
+                blankLine: 'always',
                 prev: 'block',
-                next: '*' },
+                next: '*'
+            },
 
             // Require a blank line before exports
-            { blankLine: 'always',
+            {
+                blankLine: 'always',
                 prev: ['cjs-export', 'export'],
-                next: '*' },
-            { blankLine: 'any',
+                next: '*'
+            },
+            {
+                blankLine: 'any',
                 prev: ['cjs-export', 'export'],
-                next: ['cjs-export', 'export'] },
+                next: ['cjs-export', 'export']
+            },
 
             // Require a blank line after a sequence of imports/requires
-            { blankLine: 'always',
+            {
+                blankLine: 'always',
                 prev: ['cjs-import', 'import'],
-                next: '*' },
-            { blankLine: 'any',
+                next: '*'
+            },
+            {
+                blankLine: 'any',
                 prev: ['cjs-import', 'import'],
-                next: ['cjs-import', 'import'] }],
+                next: ['cjs-import', 'import']
+            }],
         'prefer-arrow-callback': ['error', {
             allowNamedFunctions: true,
         }],
