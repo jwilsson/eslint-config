@@ -11,6 +11,9 @@ module.exports = {
         es6: true,
     },
     rules: {
+        'accessor-pairs': ['error', {
+            'enforceForClassMembers': true,
+        }],
         'array-bracket-newline': ['error', 'consistent'],
         'array-bracket-spacing': 'error',
         'array-element-newline': ['error', 'consistent'],
@@ -38,6 +41,9 @@ module.exports = {
         'func-style': 'error',
         'function-paren-newline': ['error', 'consistent'],
         'generator-star-spacing': 'error',
+        'grouped-accessor-pairs': ['error', {
+            'getBeforeSet': true
+        }],
         'guard-for-in': 'error',
         'indent': ['error', 4, {
             SwitchCase: 1,
@@ -70,7 +76,9 @@ module.exports = {
         'no-confusing-arrow': ['error', {
             allowParens: false,
         }],
+        'no-constructor-return': 'error',
         'no-div-regex': 'error',
+        'no-dupe-else-if': 'error',
         'no-duplicate-imports': 'error',
         'no-else-return': 'error',
         'no-empty-function': 'error',
@@ -107,6 +115,7 @@ module.exports = {
         'no-self-assign': 'error',
         'no-self-compare': 'error',
         'no-sequences': 'error',
+        'no-setter-return': 'error',
         'no-shadow': 'error',
         'no-tabs': 'error',
         'no-template-curly-in-string': 'error',
@@ -207,6 +216,7 @@ module.exports = {
             array: false,
             object: true,
         }],
+        'prefer-exponentiation-operator': 'error',
         'prefer-object-spread': 'error',
         'prefer-promise-reject-errors': 'error',
         'prefer-reflect': 'error',
