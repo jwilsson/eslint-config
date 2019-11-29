@@ -225,6 +225,7 @@ module.exports = {
         'prefer-spread': 'error',
         'prefer-template': 'error',
         'quote-props': ['error', 'consistent-as-needed'],
+        'quotes': ['error', 'single', 'avoid-escape'],
         'radix': ['error', 'as-needed'],
         'require-await': 'error',
         'require-unicode-regexp': 'error',
@@ -266,7 +267,6 @@ module.exports = {
             allowTaggedTemplates: true,
         }],
         'babel/object-curly-spacing': ['error', 'always'],
-        'babel/quotes': ['error', 'single', 'avoid-escape'],
         'babel/semi': 'error',
     },
 };
