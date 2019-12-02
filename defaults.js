@@ -41,9 +41,7 @@ module.exports = {
         'func-style': 'error',
         'function-paren-newline': ['error', 'consistent'],
         'generator-star-spacing': 'error',
-        'grouped-accessor-pairs': ['error', {
-            'getBeforeSet': true
-        }],
+        'grouped-accessor-pairs': ['error', 'getBeforeSet'],
         'guard-for-in': 'error',
         'indent': ['error', 4, {
             SwitchCase: 1,
