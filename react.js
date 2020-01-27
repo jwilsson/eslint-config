@@ -30,6 +30,7 @@ module.exports = {
         'react/jsx-no-bind': ['error', {
             allowArrowFunctions: true,
         }],
+        'react/jsx-no-script-url': 'error',
         'react/jsx-no-useless-fragment': 'error',
         'react/jsx-pascal-case': 'error',
         'react/jsx-props-no-multi-spaces': 'error',
@@ -42,6 +43,7 @@ module.exports = {
         'react/destructuring-assignment': ['error', 'always', {
             ignoreClassFields: true,
         }],
+        'react/no-adjacent-inline-elements': 'error',
         'react/no-did-mount-set-state': 'error',
         'react/no-did-update-set-state': 'error',
         'react/no-multi-comp': 'error',
