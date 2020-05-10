@@ -3,6 +3,7 @@ module.exports = {
     extends: [
         './browser.js',
         'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
     ],
     env: {
         jest: true,
