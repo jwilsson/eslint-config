@@ -1,14 +1,11 @@
 module.exports = {
     extends: 'eslint:recommended',
     parser: 'babel-eslint',
-    parserOptions: {
-        ecmaVersion: 2020,
-    },
     plugins: [
         'babel',
     ],
     env: {
-        es6: true,
+        es2021: true,
     },
     rules: {
         'accessor-pairs': 'error',
