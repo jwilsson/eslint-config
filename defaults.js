@@ -25,6 +25,7 @@ module.exports = {
         'consistent-return': 'error',
         'consistent-this': ['error', 'self'],
         'curly': 'error',
+        'default-case-last': 'error',
         'default-param-last': 'error',
         'dot-location': ['error', 'property'],
         'dot-notation': 'error',
@@ -34,10 +35,12 @@ module.exports = {
         'func-name-matching': 'error',
         'func-names': 'error',
         'func-style': 'error',
+        'function-call-argument-newline': ['error', 'consistent'],
         'function-paren-newline': ['error', 'consistent'],
         'generator-star-spacing': 'error',
         'grouped-accessor-pairs': ['error', 'getBeforeSet'],
         'guard-for-in': 'error',
+        'implicit-arrow-linebreak': 'error',
         'indent': ['error', 4, {
             SwitchCase: 1,
             VariableDeclarator: 0,
@@ -48,6 +51,13 @@ module.exports = {
             before: true,
         }],
         'line-comment-position': 'error',
+        'linebreak-style': 'error',
+        'lines-around-comment': ['error', {
+            afterBlockComment: false,
+            afterLineComment: false,
+            allowBlockStart: false,
+            allowBlockEnd: false,
+        }],
         'lines-between-class-members': 'error',
         'max-classes-per-file': 'error',
         'max-depth': 'error',
@@ -83,6 +93,7 @@ module.exports = {
         'no-implicit-coercion': 'error',
         'no-implied-eval': 'error',
         'no-inline-comments': 'error',
+        'no-invalid-this': 'error',
         'no-iterator': 'error',
         'no-label-var': 'error',
         'no-labels': ['error', {
@@ -92,6 +103,7 @@ module.exports = {
         'no-lonely-if': 'error',
         'no-loop-func': 'error',
         'no-loss-of-precision': 'error',
+        'no-mixed-operators': 'error',
         'no-multi-assign': 'error',
         'no-multi-spaces': 'error',
         'no-multi-str': 'error',
@@ -123,7 +135,11 @@ module.exports = {
         'no-unneeded-ternary': 'error',
         'no-unreachable-loop': 'error',
         'no-unsafe-negation': 'error',
+        'no-unused-expressions': ['error', {
+            allowShortCircuit: true,
+        }],
         'no-use-before-define': 'error',
+        'no-useless-backreference': 'error',
         'no-useless-call': 'error',
         'no-useless-computed-key': 'error',
         'no-useless-concat': 'error',
@@ -135,8 +151,9 @@ module.exports = {
         'no-warning-comments': 'error',
         'no-whitespace-before-property': 'error',
         'object-curly-newline': 'error',
+        'object-curly-spacing': ['error', 'always'],
         'object-property-newline': 'error',
-        'one-var': ['error', 'never'],
+        'object-shorthand': ['error', 'properties'],
         'operator-linebreak': 'error',
         'padded-blocks': ['error', 'never'],
         'padding-line-between-statements': ['error',
@@ -144,62 +161,62 @@ module.exports = {
             {
                 blankLine: 'always',
                 prev: '*',
-                next: 'return'
+                next: 'return',
             },
 
             // Require a blank line after a sequence of variable declarations
             {
                 blankLine: 'always',
                 prev: ['const', 'let', 'var'],
-                next: '*'
+                next: '*',
             },
             {
                 blankLine: 'any',
                 prev: ['const', 'let', 'var'],
-                next: ['const', 'let', 'var']
+                next: ['const', 'let', 'var'],
             },
 
             // Require a blank line after directives, e.g. "use strict"
             {
                 blankLine: 'always',
                 prev: 'directive',
-                next: '*'
+                next: '*',
             },
             {
                 blankLine: 'any',
                 prev: 'directive',
-                next: 'directive'
+                next: 'directive',
             },
 
             // Require a blank line after blocks
             {
                 blankLine: 'always',
                 prev: 'block',
-                next: '*'
+                next: '*',
             },
 
             // Require a blank line before exports
             {
                 blankLine: 'always',
                 prev: ['cjs-export', 'export'],
-                next: '*'
+                next: '*',
             },
             {
                 blankLine: 'any',
                 prev: ['cjs-export', 'export'],
-                next: ['cjs-export', 'export']
+                next: ['cjs-export', 'export'],
             },
 
             // Require a blank line after a sequence of imports/requires
             {
                 blankLine: 'always',
                 prev: ['cjs-import', 'import'],
-                next: '*'
+                next: '*',
             },
             {
                 blankLine: 'any',
                 prev: ['cjs-import', 'import'],
-                next: ['cjs-import', 'import']
+                next: ['cjs-import', 'import'],
             }],
         'prefer-arrow-callback': ['error', {
             allowNamedFunctions: true,
@@ -220,10 +237,13 @@ module.exports = {
         'quote-props': ['error', 'consistent-as-needed'],
         'quotes': ['error', 'single', 'avoid-escape'],
         'radix': ['error', 'as-needed'],
+        'require-atomic-updates': 'error',
         'require-await': 'error',
         'require-unicode-regexp': 'error',
+        'rest-spread-spacing': 'error',
         'semi-spacing': 'error',
         'semi-style': 'error',
+        'semi': 'error',
         'sort-keys': ['error', 'asc', {
             caseSensitive: false,
             natural: true,

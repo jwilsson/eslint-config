@@ -14,6 +14,10 @@ module.exports = {
         },
     },
     rules: {
+        'jsx-quotes': 'error',
+
+        'babel/quotes': 'error',
+
         'react/button-has-type': 'error',
         'react/default-props-match-prop-types': 'error',
         'react/forbid-component-props': 'error',
