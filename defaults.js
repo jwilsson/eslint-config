@@ -112,6 +112,7 @@ module.exports = {
         'no-new-func': 'error',
         'no-new-object': 'error',
         'no-new-wrappers': 'error',
+        'no-nonoctal-decimal-escape': 'error',
         'no-octal-escape': 'error',
         'no-promise-executor-return': 'error',
         'no-proto': 'error',
