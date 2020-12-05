@@ -136,6 +136,9 @@ module.exports = {
         'no-unneeded-ternary': 'error',
         'no-unreachable-loop': 'error',
         'no-unsafe-negation': 'error',
+        'no-unsafe-optional-chaining': ['error', {
+            disallowArithmeticOperators: true,
+        }],
         'no-unused-expressions': ['error', {
             allowShortCircuit: true,
         }],
