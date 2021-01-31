@@ -25,6 +25,7 @@ module.exports = {
         'no-shadow': 'off',
         'no-throw-literal': 'off',
         'no-unused-expressions': 'off',
+        'no-use-before-define': 'off',
         'no-useless-constructor': 'off',
         'object-curly-spacing': 'off',
         'quotes': 'off',
@@ -34,7 +35,7 @@ module.exports = {
 
         '@typescript-eslint/array-type': 'error',
         '@typescript-eslint/brace-style': 'error',
-        '@typescript-eslint/comma-dangle': 'error',
+        '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
         '@typescript-eslint/comma-spacing': 'error',
         '@typescript-eslint/consistent-type-definitions': 'error',
         '@typescript-eslint/default-param-last': 'error',
@@ -66,6 +67,7 @@ module.exports = {
         '@typescript-eslint/no-unused-expressions': ['error', {
             allowShortCircuit: true,
         }],
+        '@typescript-eslint/no-use-before-define': 'error',
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/non-nullable-type-assertion-style': 'error',
         '@typescript-eslint/object-curly-spacing': ['error', 'always'],
@@ -79,7 +81,7 @@ module.exports = {
         '@typescript-eslint/prefer-reduce-type-parameter': 'error',
         '@typescript-eslint/prefer-string-starts-ends-with': 'error',
         '@typescript-eslint/prefer-ts-expect-error': 'error',
-        '@typescript-eslint/quotes': 'error',
+        '@typescript-eslint/quotes': ['error', 'single', 'avoid-escape'],
         '@typescript-eslint/require-array-sort-compare': 'error',
         '@typescript-eslint/return-await': 'error',
         '@typescript-eslint/semi': 'error',
