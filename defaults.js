@@ -46,10 +46,7 @@ module.exports = {
             VariableDeclarator: 0,
         }],
         'key-spacing': 'error',
-        'keyword-spacing': ['error', {
-            after: true,
-            before: true,
-        }],
+        'keyword-spacing': 'error',
         'line-comment-position': 'error',
         'linebreak-style': 'error',
         'lines-around-comment': ['error', {
