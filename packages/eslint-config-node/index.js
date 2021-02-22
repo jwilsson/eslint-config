@@ -1,8 +1,10 @@
 module.exports = {
-    plugins: ['node'],
     extends: [
-        './defaults.js',
+        '@jwilsson/eslint-config',
         'plugin:node/recommended',
+    ],
+    plugins: [
+        'node',
     ],
     env: {
         node: true,

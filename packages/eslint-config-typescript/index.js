@@ -1,9 +1,11 @@
 module.exports = {
-    plugins: ['@typescript-eslint'],
-    parser: '@typescript-eslint/parser',
     extends: [
-        './defaults.js',
+        '@jwilsson/eslint-config',
         'plugin:@typescript-eslint/recommended',
+    ],
+    parser: '@typescript-eslint/parser',
+    plugins: [
+        '@typescript-eslint',
     ],
     rules: {
         'brace-style': 'off',

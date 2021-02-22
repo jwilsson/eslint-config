@@ -1,6 +1,6 @@
 module.exports = {
     extends: [
-        './defaults.js',
+        '@jwilsson/eslint-config',
     ],
     env: {
         browser: true,

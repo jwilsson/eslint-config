@@ -1,9 +1,11 @@
 module.exports = {
-    plugins: ['react'],
     extends: [
-        './browser.js',
+        '@jwilsson/eslint-config-browser',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
+    ],
+    plugins: [
+        'react',
     ],
     env: {
         jest: true,

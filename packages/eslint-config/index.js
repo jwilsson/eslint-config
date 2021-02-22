@@ -1,5 +1,7 @@
 module.exports = {
-    extends: 'eslint:recommended',
+    extends: [
+        'eslint:recommended',
+    ],
     parser: '@babel/eslint-parser',
     plugins: [
         'babel',
