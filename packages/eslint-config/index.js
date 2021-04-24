@@ -141,6 +141,9 @@ module.exports = {
         'no-unused-expressions': ['error', {
             allowShortCircuit: true,
         }],
+        'no-unused-vars': ['error', {
+            varsIgnorePattern: '_',
+        }],
         'no-use-before-define': 'error',
         'no-useless-backreference': 'error',
         'no-useless-call': 'error',

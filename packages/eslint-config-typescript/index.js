@@ -69,6 +69,9 @@ module.exports = {
         '@typescript-eslint/no-unused-expressions': ['error', {
             allowShortCircuit: true,
         }],
+        '@typescript-eslint/no-unused-vars': ['error', {
+            varsIgnorePattern: '_',
+        }],
         '@typescript-eslint/no-use-before-define': 'error',
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/non-nullable-type-assertion-style': 'error',
