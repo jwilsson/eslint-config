@@ -97,4 +97,12 @@ module.exports = {
         '@typescript-eslint/switch-exhaustiveness-check': 'error',
         '@typescript-eslint/type-annotation-spacing': 'error',
     },
+    overrides: [
+        {
+            files: ['*.tsx'],
+            'rules': {
+                '@typescript-eslint/explicit-module-boundary-types': 'off',
+            },
+        },
+    ],
 };
