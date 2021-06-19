@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@jwilsson/eslint-config": "^6.1.0",
+    "@jwilsson/eslint-config-browser": "^6.1.0",
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^4.0.0"
   },
