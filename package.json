@@ -3,6 +3,11 @@
   "description": "jwilsson ESLint config",
   "repository": "jwilsson/eslint-config",
   "license": "MIT",
+  "scripts": {
+    "install-all": "lerna exec --no-bail -- npm install --package-lock=false",
+    "outdated-all": "lerna exec --no-bail -- npm outdated",
+    "update-all": "lerna exec --no-bail -- npm update"
+  },
   "devDependencies": {
     "lerna": "^4.0.0"
   }
