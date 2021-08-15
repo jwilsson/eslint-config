@@ -1,11 +1,7 @@
 module.exports = {
-    extends: [
-        'eslint:recommended',
-    ],
+    extends: ['eslint:recommended'],
     parser: '@babel/eslint-parser',
-    plugins: [
-        'babel',
-    ],
+    plugins: ['babel'],
     env: {
         es2021: true,
     },
@@ -43,41 +39,57 @@ module.exports = {
         'grouped-accessor-pairs': ['error', 'getBeforeSet'],
         'guard-for-in': 'error',
         'implicit-arrow-linebreak': 'error',
-        'indent': ['error', 4, {
-            SwitchCase: 1,
-            VariableDeclarator: 0,
-        }],
+        'indent': [
+            'error',
+            4,
+            {
+                SwitchCase: 1,
+                VariableDeclarator: 0,
+            },
+        ],
         'key-spacing': 'error',
         'keyword-spacing': 'error',
         'line-comment-position': 'error',
         'linebreak-style': 'error',
-        'lines-around-comment': ['error', {
-            afterBlockComment: false,
-            afterLineComment: false,
-            allowBlockStart: false,
-            allowBlockEnd: false,
-        }],
+        'lines-around-comment': [
+            'error',
+            {
+                afterBlockComment: false,
+                afterLineComment: false,
+                allowBlockStart: false,
+                allowBlockEnd: false,
+            },
+        ],
         'lines-between-class-members': 'error',
         'max-classes-per-file': 'error',
         'max-depth': 'error',
-        'max-nested-callbacks': ['error', {
-            max: 4,
-        }],
+        'max-nested-callbacks': [
+            'error',
+            {
+                max: 4,
+            },
+        ],
         'max-params': 'error',
         'max-statements-per-line': 'error',
         'multiline-comment-style': 'error',
         'multiline-ternary': ['error', 'never'],
         'new-cap': 'error',
         'new-parens': 'error',
-        'newline-per-chained-call': ['error', {
-            ignoreChainWithDepth: 3,
-        }],
+        'newline-per-chained-call': [
+            'error',
+            {
+                ignoreChainWithDepth: 3,
+            },
+        ],
         'no-array-constructor': 'error',
         'no-await-in-loop': 'error',
         'no-caller': 'error',
-        'no-confusing-arrow': ['error', {
-            allowParens: false,
-        }],
+        'no-confusing-arrow': [
+            'error',
+            {
+                allowParens: false,
+            },
+        ],
         'no-constructor-return': 'error',
         'no-div-regex': 'error',
         'no-duplicate-imports': 'error',
@@ -95,13 +107,15 @@ module.exports = {
         'no-invalid-this': 'error',
         'no-iterator': 'error',
         'no-label-var': 'error',
-        'no-labels': ['error', {
-            allowLoop: true,
-        }],
+        'no-labels': [
+            'error',
+            {
+                allowLoop: true,
+            },
+        ],
         'no-lone-blocks': 'error',
         'no-lonely-if': 'error',
         'no-loop-func': 'error',
-        'no-loss-of-precision': 'error',
         'no-mixed-operators': 'error',
         'no-multi-assign': 'error',
         'no-multi-spaces': 'error',
@@ -111,7 +125,6 @@ module.exports = {
         'no-new-func': 'error',
         'no-new-object': 'error',
         'no-new-wrappers': 'error',
-        'no-nonoctal-decimal-escape': 'error',
         'no-octal-escape': 'error',
         'no-promise-executor-return': 'error',
         'no-proto': 'error',
@@ -128,24 +141,35 @@ module.exports = {
         'no-undef-init': 'error',
         'no-undef': 'error',
         'no-undefined': 'error',
-        'no-underscore-dangle': ['error', {
-            enforceInMethodNames: true,
-        }],
+        'no-underscore-dangle': [
+            'error',
+            {
+                enforceInMethodNames: true,
+            },
+        ],
         'no-unmodified-loop-condition': 'error',
         'no-unneeded-ternary': 'error',
         'no-unreachable-loop': 'error',
         'no-unsafe-negation': 'error',
-        'no-unsafe-optional-chaining': ['error', {
-            disallowArithmeticOperators: true,
-        }],
-        'no-unused-expressions': ['error', {
-            allowShortCircuit: true,
-        }],
-        'no-unused-vars': ['error', {
-            varsIgnorePattern: '_',
-        }],
+        'no-unsafe-optional-chaining': [
+            'error',
+            {
+                disallowArithmeticOperators: true,
+            },
+        ],
+        'no-unused-expressions': [
+            'error',
+            {
+                allowShortCircuit: true,
+            },
+        ],
+        'no-unused-vars': [
+            'error',
+            {
+                varsIgnorePattern: '_',
+            },
+        ],
         'no-use-before-define': 'error',
-        'no-useless-backreference': 'error',
         'no-useless-call': 'error',
         'no-useless-computed-key': 'error',
         'no-useless-concat': 'error',
@@ -162,7 +186,8 @@ module.exports = {
         'object-shorthand': ['error', 'properties'],
         'operator-linebreak': 'error',
         'padded-blocks': ['error', 'never'],
-        'padding-line-between-statements': ['error',
+        'padding-line-between-statements': [
+            'error',
             // Require a blank line before returns
             {
                 blankLine: 'always',
@@ -223,15 +248,22 @@ module.exports = {
                 blankLine: 'any',
                 prev: ['cjs-import', 'import'],
                 next: ['cjs-import', 'import'],
-            }],
-        'prefer-arrow-callback': ['error', {
-            allowNamedFunctions: true,
-        }],
+            },
+        ],
+        'prefer-arrow-callback': [
+            'error',
+            {
+                allowNamedFunctions: true,
+            },
+        ],
         'prefer-const': 'error',
-        'prefer-destructuring': ['error', {
-            array: false,
-            object: true,
-        }],
+        'prefer-destructuring': [
+            'error',
+            {
+                array: false,
+                object: true,
+            },
+        ],
         'prefer-exponentiation-operator': 'error',
         'prefer-object-spread': 'error',
         'prefer-promise-reject-errors': 'error',
@@ -250,25 +282,36 @@ module.exports = {
         'semi-spacing': 'error',
         'semi-style': 'error',
         'semi': 'error',
-        'sort-keys': ['error', 'asc', {
-            caseSensitive: false,
-            natural: true,
-        }],
+        'sort-keys': [
+            'error',
+            'asc',
+            {
+                caseSensitive: false,
+                natural: true,
+            },
+        ],
         'space-before-blocks': 'error',
         'space-before-function-paren': 'error',
         'space-in-parens': 'error',
         'space-infix-ops': 'error',
-        'space-unary-ops': ['error', {
-            nonwords: false,
-            words: true,
-        }],
-        'spaced-comment': ['error', 'always', {
-            block: {
-                balanced: true,
-                exceptions: ['*'],
-                markers: ['!'],
+        'space-unary-ops': [
+            'error',
+            {
+                nonwords: false,
+                words: true,
             },
-        }],
+        ],
+        'spaced-comment': [
+            'error',
+            'always',
+            {
+                block: {
+                    balanced: true,
+                    exceptions: ['*'],
+                    markers: ['!'],
+                },
+            },
+        ],
         'switch-colon-spacing': 'error',
         'template-curly-spacing': 'error',
         'template-tag-spacing': 'error',
@@ -277,14 +320,20 @@ module.exports = {
         'yield-star-spacing': 'error',
         'yoda': 'error',
 
-        'babel/camelcase': ['error', {
-            ignoreDestructuring: true,
-        }],
+        'babel/camelcase': [
+            'error',
+            {
+                ignoreDestructuring: true,
+            },
+        ],
         'babel/no-invalid-this': 'error',
-        'babel/no-unused-expressions': ['error', {
-            allowShortCircuit: true,
-            allowTaggedTemplates: true,
-        }],
+        'babel/no-unused-expressions': [
+            'error',
+            {
+                allowShortCircuit: true,
+                allowTaggedTemplates: true,
+            },
+        ],
         'babel/object-curly-spacing': ['error', 'always'],
         'babel/semi': 'error',
     },
