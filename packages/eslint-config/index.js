@@ -157,6 +157,7 @@ module.exports = {
                 disallowArithmeticOperators: true,
             },
         ],
+        'no-unused-private-class-members': 'error',
         'no-unused-expressions': [
             'error',
             {
