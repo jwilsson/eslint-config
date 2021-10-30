@@ -163,6 +163,7 @@ module.exports = {
                 allowShortCircuit: true,
             },
         ],
+        'no-unused-private-class-members': 'error',
         'no-unused-vars': [
             'error',
             {
