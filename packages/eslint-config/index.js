@@ -266,6 +266,7 @@ module.exports = {
             },
         ],
         'prefer-exponentiation-operator': 'error',
+        'prefer-object-has-own': 'error',
         'prefer-object-spread': 'error',
         'prefer-promise-reject-errors': 'error',
         'prefer-reflect': 'error',
