@@ -1,8 +1,9 @@
 {
-  "name": "eslint-config-jwilsson",
+  "name": "eslint-config",
   "description": "jwilsson ESLint config",
   "repository": "jwilsson/eslint-config",
   "license": "MIT",
+  "private": true,
   "type": "module",
   "scripts": {
     "prettier": "prettier **/*.js --write",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@jwilsson/prettier-config": "^7.2.0",
     "execa": "^6.0.0",
+    "inquirer": "^8.2.0",
     "prettier": "^2.5.1"
   },
   "prettier": "@jwilsson/prettier-config"

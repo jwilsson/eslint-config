@@ -16,10 +16,14 @@ for (const pkg of packages) {
 
     console.log(`Running "npm ${args[0]}" in package "${pkg.name}":`);
 
-    await execa('npm', args, {
-        cwd: path.join(packagesPath, pkg.name),
-        stdio: 'inherit',
-    });
+    try {
+        await execa('npm', args, {
+            cwd: path.join(packagesPath, pkg.name),
+            stdio: 'inherit',
+        });
+    } catch {
+        process.exitCode = 1;
+    }
 
     console.log(
         '----------------------------------------------------------------------\n',
