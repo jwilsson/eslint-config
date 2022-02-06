@@ -38,6 +38,7 @@ module.exports = {
                 allowArrowFunctions: true,
             },
         ],
+        'react/jsx-no-constructed-context-values': 'error',
         'react/jsx-no-script-url': 'error',
         'react/jsx-no-useless-fragment': 'error',
         'react/jsx-pascal-case': 'error',
@@ -46,6 +47,7 @@ module.exports = {
         'react/jsx-tag-spacing': 'error',
         'react/jsx-wrap-multilines': 'error',
         'react/no-access-state-in-setstate': 'error',
+        'react/no-arrow-function-lifecycle': 'error',
         'react/no-danger': 'error',
         'react/no-deprecated': 'error',
         'react/destructuring-assignment': [
@@ -59,6 +61,7 @@ module.exports = {
         'react/no-did-mount-set-state': 'error',
         'react/no-did-update-set-state': 'error',
         'react/no-multi-comp': 'error',
+        'react/no-namespace': 'error',
         'react/no-redundant-should-component-update': 'error',
         'react/no-this-in-sfc': 'error',
         'react/no-typos': 'error',
