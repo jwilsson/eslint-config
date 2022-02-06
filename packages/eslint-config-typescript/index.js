@@ -37,7 +37,7 @@ module.exports = {
         '@typescript-eslint/brace-style': 'error',
         '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
         '@typescript-eslint/comma-spacing': 'error',
-        '@typescript-eslint/consistent-type-definitions': 'error',
+        '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
         '@typescript-eslint/default-param-last': 'error',
         '@typescript-eslint/dot-notation': 'error',
         '@typescript-eslint/func-call-spacing': 'error',
