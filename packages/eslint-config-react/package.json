@@ -1,6 +1,6 @@
 {
   "name": "@jwilsson/eslint-config-react",
-  "version": "7.4.0",
+  "version": "7.4.1",
   "description": "jwilsson React ESLint config",
   "repository": "jwilsson/eslint-config",
   "main": "index.js",
