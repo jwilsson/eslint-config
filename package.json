@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "prettier": "prettier packages/**/*.js --write",
+    "release": "./release.sh",
     "install-all": "node npm-run.js install --package-lock=false",
     "outdated-all": "node npm-run.js outdated",
     "publish-all": "node npm-run.js publish",
