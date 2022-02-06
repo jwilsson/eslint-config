@@ -1,5 +1,3 @@
 module.exports = {
-    extends: [
-        'plugin:prettier/recommended',
-    ],
+    extends: ['plugin:prettier/recommended'],
 };

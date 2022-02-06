@@ -4,9 +4,7 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
     ],
-    plugins: [
-        'react',
-    ],
+    plugins: ['react'],
     env: {
         jest: true,
     },
@@ -34,9 +32,12 @@ module.exports = {
         'react/jsx-indent-props': 'error',
         'react/jsx-indent': 'error',
         'react/jsx-max-props-per-line': 'error',
-        'react/jsx-no-bind': ['error', {
-            allowArrowFunctions: true,
-        }],
+        'react/jsx-no-bind': [
+            'error',
+            {
+                allowArrowFunctions: true,
+            },
+        ],
         'react/jsx-no-script-url': 'error',
         'react/jsx-no-useless-fragment': 'error',
         'react/jsx-pascal-case': 'error',
@@ -47,9 +48,13 @@ module.exports = {
         'react/no-access-state-in-setstate': 'error',
         'react/no-danger': 'error',
         'react/no-deprecated': 'error',
-        'react/destructuring-assignment': ['error', 'always', {
-            ignoreClassFields: true,
-        }],
+        'react/destructuring-assignment': [
+            'error',
+            'always',
+            {
+                ignoreClassFields: true,
+            },
+        ],
         'react/no-adjacent-inline-elements': 'error',
         'react/no-did-mount-set-state': 'error',
         'react/no-did-update-set-state': 'error',

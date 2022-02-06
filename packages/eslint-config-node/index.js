@@ -1,18 +1,16 @@
 module.exports = {
-    extends: [
-        '@jwilsson/eslint-config',
-        'plugin:node/recommended',
-    ],
-    plugins: [
-        'node',
-    ],
+    extends: ['@jwilsson/eslint-config', 'plugin:node/recommended'],
+    plugins: ['node'],
     env: {
         node: true,
     },
     rules: {
-        'no-underscore-dangle': ['error', {
-            allow: ['__dirname', '__filename'],
-        }],
+        'no-underscore-dangle': [
+            'error',
+            {
+                allow: ['__dirname', '__filename'],
+            },
+        ],
         'strict': ['error', 'global'],
 
         'node/callback-return': 'error',

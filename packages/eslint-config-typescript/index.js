@@ -4,9 +4,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
     ],
     parser: '@typescript-eslint/parser',
-    plugins: [
-        '@typescript-eslint',
-    ],
+    plugins: ['@typescript-eslint'],
     rules: {
         'brace-style': 'off',
         'comma-dangle': 'off',
@@ -66,12 +64,18 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
         '@typescript-eslint/no-unnecessary-type-arguments': 'error',
         '@typescript-eslint/no-unnecessary-type-constraint': 'error',
-        '@typescript-eslint/no-unused-expressions': ['error', {
-            allowShortCircuit: true,
-        }],
-        '@typescript-eslint/no-unused-vars': ['error', {
-            varsIgnorePattern: '_',
-        }],
+        '@typescript-eslint/no-unused-expressions': [
+            'error',
+            {
+                allowShortCircuit: true,
+            },
+        ],
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            {
+                varsIgnorePattern: '_',
+            },
+        ],
         '@typescript-eslint/no-use-before-define': 'error',
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/non-nullable-type-assertion-style': 'error',
@@ -100,7 +104,7 @@ module.exports = {
     overrides: [
         {
             files: ['*.tsx'],
-            'rules': {
+            rules: {
                 '@typescript-eslint/explicit-module-boundary-types': 'off',
             },
         },

@@ -1,7 +1,5 @@
 module.exports = {
-    extends: [
-        '@jwilsson/eslint-config',
-    ],
+    extends: ['@jwilsson/eslint-config'],
     env: {
         browser: true,
         jquery: true,
