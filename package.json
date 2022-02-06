@@ -3,15 +3,18 @@
   "description": "jwilsson ESLint config",
   "repository": "jwilsson/eslint-config",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "prettier": "prettier packages/**/*.js --write",
-    "install-all": "lerna exec --no-bail -- npm install --package-lock=false",
-    "outdated-all": "lerna exec --no-bail -- npm outdated",
-    "update-all": "lerna exec --no-bail -- npm update"
+    "install-all": "node npm-run.js install --package-lock=false",
+    "outdated-all": "node npm-run.js outdated",
+    "publish-all": "node npm-run.js publish",
+    "update-all": "node npm-run.js update",
+    "version-all": "node npm-run.js version"
   },
   "devDependencies": {
     "@jwilsson/prettier-config": "^7.2.0",
-    "lerna": "^4.0.0",
+    "execa": "^6.0.0",
     "prettier": "^2.5.1"
   },
   "prettier": "@jwilsson/prettier-config"
