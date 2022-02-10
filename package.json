@@ -7,17 +7,13 @@
   "type": "module",
   "scripts": {
     "prettier": "prettier **/*.js --write",
-    "release": "node scripts/release.js",
-    "install-all": "node scripts/run-all.js install --package-lock=false",
-    "outdated-all": "node scripts/run-all.js outdated",
-    "publish-all": "node scripts/run-all.js publish",
-    "update-all": "node scripts/run-all.js update",
-    "version-all": "node scripts/run-all.js version"
+    "install-all": "lerna exec --no-bail -- npm install --package-lock=false",
+    "outdated-all": "lerna exec --no-bail -- npm outdated",
+    "update-all": "lerna exec --no-bail -- npm update"
   },
   "devDependencies": {
     "@jwilsson/prettier-config": "^7.2.0",
-    "execa": "^6.0.0",
-    "inquirer": "^8.2.0",
+    "lerna": "^4.0.0",
     "prettier": "^2.5.1"
   },
   "prettier": "@jwilsson/prettier-config"
