@@ -3,7 +3,7 @@ module.exports = {
     parser: '@babel/eslint-parser',
     plugins: ['babel'],
     env: {
-        es2021: true,
+        es2022: true,
     },
     rules: {
         'accessor-pairs': 'error',
