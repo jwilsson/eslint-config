@@ -11,7 +11,6 @@ module.exports = {
                 allow: ['__dirname', '__filename'],
             },
         ],
-        'strict': ['error', 'global'],
 
         'node/callback-return': 'error',
         'node/exports-style': ['error', 'module.exports'],

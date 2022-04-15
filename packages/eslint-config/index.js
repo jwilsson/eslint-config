@@ -208,18 +208,6 @@ module.exports = {
                 next: ['const', 'let', 'var'],
             },
 
-            // Require a blank line after directives, e.g. "use strict"
-            {
-                blankLine: 'always',
-                prev: 'directive',
-                next: '*',
-            },
-            {
-                blankLine: 'any',
-                prev: 'directive',
-                next: 'directive',
-            },
-
             // Require a blank line after blocks
             {
                 blankLine: 'always',
