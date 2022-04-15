@@ -34,15 +34,34 @@ module.exports = {
         'space-infix-ops': 'off',
 
         '@typescript-eslint/array-type': 'error',
+        '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/brace-style': 'error',
         '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
         '@typescript-eslint/comma-spacing': 'error',
+        '@typescript-eslint/consistent-indexed-object-style': 'error',
+        '@typescript-eslint/consistent-type-assertions': [
+            'error',
+            {
+                assertionStyle: 'as',
+                objectLiteralTypeAssertions: 'never',
+            },
+        ],
         '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+        '@typescript-eslint/consistent-type-exports': [
+            'error',
+            {
+                fixMixedExportsWithInlineTypeSpecifier: true,
+            },
+        ],
+        '@typescript-eslint/consistent-type-imports': 'error',
         '@typescript-eslint/default-param-last': 'error',
         '@typescript-eslint/dot-notation': 'error',
+        '@typescript-eslint/explicit-member-accessibility': 'error',
+        '@typescript-eslint/explicit-function-return-type': ['error', {}],
         '@typescript-eslint/func-call-spacing': 'error',
         '@typescript-eslint/keyword-spacing': 'error',
         '@typescript-eslint/lines-between-class-members': 'error',
+        '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/method-signature-style': 'error',
         '@typescript-eslint/no-confusing-non-null-assertion': 'error',
         '@typescript-eslint/no-confusing-void-expression': 'error',
@@ -63,7 +82,6 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-condition': 'error',
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
         '@typescript-eslint/no-unnecessary-type-arguments': 'error',
-        '@typescript-eslint/no-unnecessary-type-constraint': 'error',
         '@typescript-eslint/no-unused-expressions': [
             'error',
             {
