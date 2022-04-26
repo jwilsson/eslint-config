@@ -90,6 +90,7 @@ module.exports = {
                 allowParens: false,
             },
         ],
+        'no-constant-binary-expression': 'error',
         'no-constructor-return': 'error',
         'no-div-regex': 'error',
         'no-duplicate-imports': 'error',
