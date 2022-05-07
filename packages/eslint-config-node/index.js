@@ -9,6 +9,8 @@ module.exports = {
             'error',
             {
                 allow: ['__dirname', '__filename'],
+                enforceInClassFields: true,
+                enforceInMethodNames: true,
             },
         ],
 

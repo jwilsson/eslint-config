@@ -145,6 +145,7 @@ module.exports = {
         'no-underscore-dangle': [
             'error',
             {
+                enforceInClassFields: true,
                 enforceInMethodNames: true,
             },
         ],
