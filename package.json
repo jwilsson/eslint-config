@@ -15,7 +15,14 @@
     ],
     "devDependencies": {
         "@jwilsson/prettier-config": "^7.2.0",
-        "prettier": "^2.5.1"
+        "prettier": "^2.5.1",
+        "simple-git-hooks": "^2.7.0"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "npx lint-staged"
+    },
+    "lint-staged": {
+        "packages/**/*.{js,json}": "prettier --write"
     },
     "prettier": "@jwilsson/prettier-config"
 }
