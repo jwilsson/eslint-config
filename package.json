@@ -5,15 +5,16 @@
     "license": "MIT",
     "private": true,
     "type": "module",
-    "scripts": {
-        "prettier": "prettier **/*.js --write",
-        "install-all": "lerna exec --no-bail -- npm install --package-lock=false",
-        "outdated-all": "lerna exec --no-bail -- npm outdated",
-        "update-all": "lerna exec --no-bail -- npm update --package-lock=false"
-    },
+    "workspaces": [
+        "packages/eslint-config",
+        "packages/eslint-config-browser",
+        "packages/eslint-config-node",
+        "packages/eslint-config-prettier",
+        "packages/eslint-config-react",
+        "packages/eslint-config-typescript"
+    ],
     "devDependencies": {
         "@jwilsson/prettier-config": "^7.2.0",
-        "lerna": "^4.0.0",
         "prettier": "^2.5.1"
     },
     "prettier": "@jwilsson/prettier-config"
