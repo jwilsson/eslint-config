@@ -1,7 +1,5 @@
 module.exports = {
-    extends: ['eslint:recommended'],
-    parser: '@babel/eslint-parser',
-    plugins: ['babel'],
+    extends: ['eslint:recommended', './babel'],
     env: {
         es2022: true,
     },
@@ -105,7 +103,6 @@ module.exports = {
         'no-implicit-coercion': 'error',
         'no-implied-eval': 'error',
         'no-inline-comments': 'error',
-        'no-invalid-this': 'error',
         'no-iterator': 'error',
         'no-label-var': 'error',
         'no-labels': [
@@ -159,12 +156,6 @@ module.exports = {
                 disallowArithmeticOperators: true,
             },
         ],
-        'no-unused-expressions': [
-            'error',
-            {
-                allowShortCircuit: true,
-            },
-        ],
         'no-unused-private-class-members': 'error',
         'no-unused-vars': [
             'error',
@@ -184,7 +175,6 @@ module.exports = {
         'no-warning-comments': 'error',
         'no-whitespace-before-property': 'error',
         'object-curly-newline': 'error',
-        'object-curly-spacing': ['error', 'always'],
         'object-property-newline': 'error',
         'object-shorthand': ['error', 'properties'],
         'operator-linebreak': 'error',
@@ -273,7 +263,7 @@ module.exports = {
         'rest-spread-spacing': 'error',
         'semi-spacing': 'error',
         'semi-style': 'error',
-        'semi': 'error',
+
         'sort-keys': [
             'error',
             'asc',
@@ -311,22 +301,5 @@ module.exports = {
         'wrap-iife': 'error',
         'yield-star-spacing': 'error',
         'yoda': 'error',
-
-        'babel/camelcase': [
-            'error',
-            {
-                ignoreDestructuring: true,
-            },
-        ],
-        'babel/no-invalid-this': 'error',
-        'babel/no-unused-expressions': [
-            'error',
-            {
-                allowShortCircuit: true,
-                allowTaggedTemplates: true,
-            },
-        ],
-        'babel/object-curly-spacing': ['error', 'always'],
-        'babel/semi': 'error',
     },
 };
