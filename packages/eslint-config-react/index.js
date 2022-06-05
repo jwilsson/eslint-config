@@ -49,6 +49,7 @@ module.exports = {
             },
         ],
         'react/jsx-no-constructed-context-values': 'error',
+        'react/jsx-no-leaked-render': 'error',
         'react/jsx-no-script-url': 'error',
         'react/jsx-no-useless-fragment': 'error',
         'react/jsx-pascal-case': 'error',
@@ -64,7 +65,8 @@ module.exports = {
             'error',
             'always',
             {
-                ignoreClassFields: true,
+                'destructuring-assignment': 'always',
+                'ignoreClassFields': true,
             },
         ],
         'react/no-adjacent-inline-elements': 'error',
