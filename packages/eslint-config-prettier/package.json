@@ -1,6 +1,6 @@
 {
     "name": "@jwilsson/eslint-config-prettier",
-    "version": "7.8.0",
+    "version": "7.9.0",
     "description": "jwilsson Prettier ESLint config",
     "repository": "jwilsson/eslint-config",
     "main": "index.js",
