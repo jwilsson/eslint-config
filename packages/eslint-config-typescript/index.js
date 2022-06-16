@@ -38,6 +38,7 @@ module.exports = {
         '@typescript-eslint/brace-style': 'error',
         '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
         '@typescript-eslint/comma-spacing': 'error',
+        '@typescript-eslint/consistent-generic-constructors': 'error',
         '@typescript-eslint/consistent-indexed-object-style': 'error',
         '@typescript-eslint/consistent-type-assertions': [
             'error',
