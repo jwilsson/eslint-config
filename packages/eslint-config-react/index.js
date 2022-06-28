@@ -65,8 +65,8 @@ module.exports = {
             'error',
             'always',
             {
-                'destructuring-assignment': 'always',
-                'ignoreClassFields': true,
+                destructureInSignature: 'always',
+                ignoreClassFields: true,
             },
         ],
         'react/no-adjacent-inline-elements': 'error',
