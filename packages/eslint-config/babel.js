@@ -1,5 +1,5 @@
 module.exports = {
-    plugins: ['babel'],
+    plugins: ['@babel'],
     parser: '@babel/eslint-parser',
     rules: {
         'camelcase': 'off',
@@ -8,21 +8,21 @@ module.exports = {
         'object-curly-spacing': 'off',
         'semi': 'off',
 
-        'babel/camelcase': [
+        '@babel/camelcase': [
             'error',
             {
                 ignoreDestructuring: true,
             },
         ],
-        'babel/no-invalid-this': 'error',
-        'babel/no-unused-expressions': [
+        '@babel/no-invalid-this': 'error',
+        '@babel/no-unused-expressions': [
             'error',
             {
                 allowShortCircuit: true,
                 allowTaggedTemplates: true,
             },
         ],
-        'babel/object-curly-spacing': ['error', 'always'],
-        'babel/semi': 'error',
+        '@babel/object-curly-spacing': ['error', 'always'],
+        '@babel/semi': 'error',
     },
 };
