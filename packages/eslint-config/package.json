@@ -6,12 +6,10 @@
     "main": "index.js",
     "license": "MIT",
     "dependencies": {
-        "@babel/eslint-parser": "^7.16.0"
+        "@babel/eslint-parser": "^7.18.0",
+        "@babel/eslint-plugin": "^7.18.0"
     },
     "peerDependencies": {
         "eslint": "^8.15.0"
-    },
-    "devDependencies": {
-        "@babel/eslint-plugin": "^7.17.7"
     }
 }
