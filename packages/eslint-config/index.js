@@ -12,6 +12,14 @@ module.exports = {
         'arrow-parens': 'error',
         'arrow-spacing': 'error',
         'brace-style': 'error',
+        'camelcase': [
+            'error',
+            {
+                ignoreDestructuring: true,
+                ignoreGlobals: true,
+                ignoreImports: true,
+            },
+        ],
         'capitalized-comments': 'error',
         'comma-dangle': ['error', 'always-multiline'],
         'comma-spacing': 'error',
