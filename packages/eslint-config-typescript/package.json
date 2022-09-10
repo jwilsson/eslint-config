@@ -1,6 +1,6 @@
 {
     "name": "@jwilsson/eslint-config-typescript",
-    "version": "7.12.2",
+    "version": "7.12.3",
     "description": "jwilsson TypeScript ESLint config",
     "repository": "jwilsson/eslint-config",
     "main": "index.js",

@@ -1,6 +1,6 @@
 {
     "name": "@jwilsson/eslint-config-browser",
-    "version": "7.12.2",
+    "version": "7.12.3",
     "description": "jwilsson Browser ESLint config",
     "repository": "jwilsson/eslint-config",
     "main": "index.js",
