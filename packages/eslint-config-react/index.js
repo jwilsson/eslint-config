@@ -16,8 +16,6 @@ module.exports = {
     rules: {
         'jsx-quotes': 'error',
 
-        '@babel/quotes': ['error', 'single', 'avoid-escape'],
-
         'react/button-has-type': 'error',
         'react/default-props-match-prop-types': 'error',
         'react/forbid-component-props': 'error',
