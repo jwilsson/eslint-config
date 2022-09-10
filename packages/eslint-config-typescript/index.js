@@ -25,6 +25,7 @@ module.exports = {
         'no-return-await': 'off',
         'no-shadow': 'off',
         'no-throw-literal': 'off',
+        'no-undef': 'off',
         'no-unused-expressions': 'off',
         'no-use-before-define': 'off',
         'no-useless-constructor': 'off',
