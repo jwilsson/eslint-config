@@ -1,12 +1,12 @@
 {
     "name": "@jwilsson/eslint-config-typescript",
-    "version": "7.13.1",
+    "version": "7.13.2",
     "description": "jwilsson TypeScript ESLint config",
     "repository": "jwilsson/eslint-config",
     "main": "index.js",
     "license": "MIT",
     "dependencies": {
-        "@jwilsson/eslint-config": "^7.13.0",
+        "@jwilsson/eslint-config": "^7.13.2",
         "@typescript-eslint/eslint-plugin": "^5.32.0",
         "@typescript-eslint/parser": "^5.32.0"
     }
