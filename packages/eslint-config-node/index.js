@@ -1,6 +1,6 @@
 module.exports = {
-    extends: ['@jwilsson/eslint-config', 'plugin:node/recommended'],
-    plugins: ['node'],
+    extends: ['@jwilsson/eslint-config', 'plugin:n/recommended'],
+    plugins: ['n'],
     env: {
         node: true,
     },
@@ -14,11 +14,11 @@ module.exports = {
             },
         ],
 
-        'node/callback-return': 'error',
-        'node/exports-style': ['error', 'module.exports'],
-        'node/global-require': 'error',
-        'node/handle-callback-err': 'error',
-        'node/no-new-require': 'error',
-        'node/no-path-concat': 'error',
+        'n/callback-return': 'error',
+        'n/exports-style': ['error', 'module.exports'],
+        'n/global-require': 'error',
+        'n/handle-callback-err': 'error',
+        'n/no-new-require': 'error',
+        'n/no-path-concat': 'error',
     },
 };
