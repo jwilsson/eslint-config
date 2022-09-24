@@ -69,6 +69,7 @@ module.exports = {
         'lines-between-class-members': 'error',
         'logical-assignment-operators': [
             'error',
+            'always',
             { enforceIfStatements: true },
         ],
         'max-classes-per-file': 'error',
