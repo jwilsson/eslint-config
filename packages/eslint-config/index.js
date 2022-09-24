@@ -70,7 +70,7 @@ module.exports = {
         'logical-assignment-operators': [
             'error',
             'always',
-            { enforceIfStatements: true },
+            { enforceForIfStatements: true },
         ],
         'max-classes-per-file': 'error',
         'max-depth': 'error',
