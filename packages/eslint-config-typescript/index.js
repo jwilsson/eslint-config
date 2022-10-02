@@ -62,7 +62,13 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': ['error', {}],
         '@typescript-eslint/func-call-spacing': 'error',
         '@typescript-eslint/keyword-spacing': 'error',
-        '@typescript-eslint/lines-between-class-members': 'error',
+        '@typescript-eslint/lines-between-class-members': [
+            'error',
+            'always',
+            {
+                exceptAfterSingleLine: true,
+            },
+        ],
         '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/method-signature-style': 'error',
         '@typescript-eslint/no-base-to-string': 'error',

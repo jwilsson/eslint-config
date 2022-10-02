@@ -66,7 +66,13 @@ module.exports = {
                 allowBlockEnd: false,
             },
         ],
-        'lines-between-class-members': 'error',
+        'lines-between-class-members': [
+            'error',
+            'always',
+            {
+                exceptAfterSingleLine: true,
+            },
+        ],
         'logical-assignment-operators': [
             'error',
             'always',
