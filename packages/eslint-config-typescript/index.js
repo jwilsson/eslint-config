@@ -55,7 +55,12 @@ module.exports = {
                 fixMixedExportsWithInlineTypeSpecifier: true,
             },
         ],
-        '@typescript-eslint/consistent-type-imports': 'error',
+        '@typescript-eslint/consistent-type-imports': [
+            'error',
+            {
+                prefer: 'no-type-imports',
+            },
+        ],
         '@typescript-eslint/default-param-last': 'error',
         '@typescript-eslint/dot-notation': 'error',
         '@typescript-eslint/explicit-member-accessibility': 'error',
