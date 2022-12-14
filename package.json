@@ -9,7 +9,6 @@
         "packages/eslint-config",
         "packages/eslint-config-browser",
         "packages/eslint-config-node",
-        "packages/eslint-config-prettier",
         "packages/eslint-config-react",
         "packages/eslint-config-typescript"
     ],
