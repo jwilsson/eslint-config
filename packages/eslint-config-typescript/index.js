@@ -64,7 +64,12 @@ module.exports = {
         '@typescript-eslint/default-param-last': 'error',
         '@typescript-eslint/dot-notation': 'error',
         '@typescript-eslint/explicit-member-accessibility': 'error',
-        '@typescript-eslint/explicit-function-return-type': ['error', {}],
+        '@typescript-eslint/explicit-function-return-type': [
+            'error',
+            {
+                allowIIFEs: true,
+            },
+        ],
         '@typescript-eslint/func-call-spacing': 'error',
         '@typescript-eslint/keyword-spacing': 'error',
         '@typescript-eslint/lines-between-class-members': [
@@ -90,6 +95,7 @@ module.exports = {
         '@typescript-eslint/no-loop-func': 'error',
         '@typescript-eslint/no-loss-of-precision': 'error',
         '@typescript-eslint/no-meaningless-void-operator': 'error',
+        '@typescript-eslint/no-mixed-enums': 'error',
         '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
         '@typescript-eslint/no-redeclare': 'error',
         '@typescript-eslint/no-require-imports': 'error',
