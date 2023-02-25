@@ -14,17 +14,12 @@ module.exports = {
         },
     },
     rules: {
-        'jsx-quotes': 'error',
-
         'react/button-has-type': 'error',
         'react/default-props-match-prop-types': 'error',
         'react/forbid-component-props': 'error',
         'react/hook-use-state': 'error',
         'react/iframe-missing-sandbox': 'error',
         'react/jsx-boolean-value': 'error',
-        'react/jsx-child-element-spacing': 'error',
-        'react/jsx-closing-bracket-location': 'error',
-        'react/jsx-closing-tag-location': 'error',
         'react/jsx-curly-brace-presence': [
             'error',
             {
@@ -33,14 +28,7 @@ module.exports = {
                 propElementValues: 'always',
             },
         ],
-        'react/jsx-curly-spacing': 'error',
-        'react/jsx-equals-spacing': 'error',
-        'react/jsx-first-prop-new-line': ['error', 'multiline'],
         'react/jsx-handler-names': 'error',
-        'react/jsx-indent-props': 'error',
-        'react/jsx-indent': 'error',
-        'react/jsx-max-props-per-line': 'error',
-        'react/jsx-newline': 'error',
         'react/jsx-no-bind': [
             'error',
             {
@@ -52,10 +40,7 @@ module.exports = {
         'react/jsx-no-script-url': 'error',
         'react/jsx-no-useless-fragment': 'error',
         'react/jsx-pascal-case': 'error',
-        'react/jsx-props-no-multi-spaces': 'error',
         'react/jsx-sort-default-props': 'error',
-        'react/jsx-tag-spacing': 'error',
-        'react/jsx-wrap-multilines': 'error',
         'react/no-access-state-in-setstate': 'error',
         'react/no-arrow-function-lifecycle': 'error',
         'react/no-danger': 'error',

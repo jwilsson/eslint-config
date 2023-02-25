@@ -4,8 +4,6 @@ module.exports = {
     rules: {
         'no-invalid-this': 'off',
         'no-unused-expressions': 'off',
-        'object-curly-spacing': 'off',
-        'semi': 'off',
 
         '@babel/no-invalid-this': 'error',
         '@babel/no-unused-expressions': [
@@ -15,7 +13,5 @@ module.exports = {
                 allowTaggedTemplates: true,
             },
         ],
-        '@babel/object-curly-spacing': ['error', 'always'],
-        '@babel/semi': 'error',
     },
 };
